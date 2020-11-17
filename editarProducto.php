@@ -20,11 +20,13 @@ if(isset($_POST["botonEditar"])){
     echo($marca);
     $precio=$_POST['precioEditar'];
     echo($precio);
+    $foto=$_POST['fotoEditar'];
+    echo($foto);
     $descripcion=$_POST['descEditar'];
     echo($descripcion);
 
     //4. Consulta para editar un registro
-    $consultaSQL="UPDATE productos SET nombre='$nombre', marca='$marca', precio='$precio', descripcion='$descripcion' WHERE idProducto='$id'";
+    $consultaSQL="UPDATE productos SET nombre='$nombre', marca='$marca', precio='$precio', foto='$foto', descripcion='$descripcion' WHERE idProducto='$id'";
 
     //5. Utilizar el metodo editar
     $transaccion->editarDatos($consultaSQL);

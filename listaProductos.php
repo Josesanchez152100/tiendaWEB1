@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRODUCTOS</title>
+    <title>TiendaCellPhone</title>
+    <link rel="icon" href="https://github.com/Josesanchez152100/imagenesProductos/blob/main/favicon.png?raw=true" sizes="16x16" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
 <body>
@@ -24,18 +25,53 @@
              
     
     ?>
+
+<header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="formularioRegistro.php">Registro <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="listaProductos.php">Productos</a>
+                </li>
+                </ul>               
+            </div>
+        </nav>    
+</header>
+
     <main>
     
         <div class="container">
 
-        <div class="row mt-3">
-                    
-            <div class="col">
-                <label class="font-weight-bold"></label>                        
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://github.com/Josesanchez152100/imagenesProductos/blob/main/xiaomibanner.jpg?raw=true" class="d-block w-100" height="280px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/Josesanchez152100/imagenesProductos/blob/main/applebanner.jpg?raw=true" class="d-block w-100" alt="..." height="280px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://github.com/Josesanchez152100/imagenesProductos/blob/main/samsung_banner.jpg?raw=true" class="d-block w-100" height="280px" alt="...">
+                        </div>
+                    </div>
             </div>
-        </div>
 
-        <h1 align="center">PRODUCTOS EN BODEGA</h1>
+            <div class="row mt-3">
+                        
+                <div class="col">
+                    <label class="font-weight-bold"></label>                        
+                </div>
+            </div>
+
+            <h1 align="center">PRODUCTOS EN BODEGA</h1>
 
             <div class="row mt-3">
                     
@@ -91,6 +127,11 @@
                                             </div>
 
                                             <div class="form-group">
+                                                <label>Foto:</label>
+                                                <input type="text" class="form-control" name="fotoEditar" value="<?php echo($producto["foto"])?>">
+                                            </div>
+
+                                            <div class="form-group">
                                                 <label>Descripcion:</label>
                                                     <textarea class="form-control" rows="3" name="descEditar"><?php echo($producto["descripcion"])?></textarea>
                                             </div>
@@ -106,7 +147,16 @@
                 <?php endforeach?>
 
             </div>
-        
+            <footer class="page-footer font-small unique-color-dark pt-4">            
+                <ul class="list-unstyled list-inline text-center py-2">
+                    <li class="list-inline-item">
+                        <h5 class="mb-1">Dirección Cr 51 #14 - 57, Teléfono 6040707, Email: cellphone@gmail.com</h5>
+                    </li>
+                </ul>
+                <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                    <a href="listaProductos.php"> TiendaCellPhone.com</a>
+                </div> 
+            </footer> 
         </div>
     
     
