@@ -28,6 +28,7 @@
         </nav>    
     </header>
     <main>
+    <div class="view" style="background-image: url('https://github.com/Josesanchez152100/imagenesProductos/blob/main/fondo1.jpg?raw=true'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div class="container">
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -52,7 +53,7 @@
                     </div>
                 </div>
                 
-                <h1 align="center">ADMINISTRACIÓN DE PRODUCTOS</h1>
+                <h1 align="center" class="text-white bg-dark">ADMINISTRACIÓN DE PRODUCTOS</h1>
 
                 <div class="row mt-3">
                     
@@ -86,7 +87,7 @@
                 <div class="row mt-3">
                     
                     <div class="col">
-                        <label class="font-weight-bold">Descripción:</label>
+                        <label class="font-weight-bold text-white bg-dark">Descripción:</label>
                         <textarea class="form-control" rows="4" placeholder="Descripción" name="descripcion"></textarea>
                     </div>
                 </div>
@@ -94,7 +95,7 @@
                 <div class="row mt-3">
                     
                     <div class="col">
-                        <label class="font-weight-bold">Foto:</label>
+                        <label class="font-weight-bold text-white bg-dark">Foto:</label>
                         <input type="text" class="form-control" placeholder="URL fotografía" name="foto">
                     </div>
                 </div>
@@ -108,8 +109,11 @@
                 
                 <button type="submit" class="btn btn-info btn-block" name="botonEnvio">Registrar</button>
             </form>
+        </div>
+    </div>    
+    </main>
 
-            <footer class="page-footer font-small unique-color-dark pt-4">            
+    <footer class="page-footer font-small pt-4 text-white bg-dark">            
                 <ul class="list-unstyled list-inline text-center py-2">
                     <li class="list-inline-item">
                         <h5 class="mb-1">Dirección Cr 51 #14 - 57, Teléfono 6040707, Email: cellphone@gmail.com</h5>
@@ -118,9 +122,8 @@
                 <div class="footer-copyright text-center py-3">© 2020 Copyright:
                     <a href="formularioRegistro.php"> TiendaCellPhone.com</a>
                 </div> 
-            </footer>   
-    </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    </footer>  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
 </body>
 </html>

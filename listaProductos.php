@@ -47,7 +47,7 @@
 </header>
 
     <main>
-    
+    <div class="view" style="background-image: url('https://github.com/Josesanchez152100/imagenesProductos/blob/main/fondo1.jpg?raw=true'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
         <div class="container">
 
             <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
@@ -71,7 +71,7 @@
                 </div>
             </div>
 
-            <h1 align="center">PRODUCTOS EN BODEGA</h1>
+            <h1 align="center" class="text-white bg-dark">PRODUCTOS EN BODEGA</h1>
 
             <div class="row mt-3">
                     
@@ -147,17 +147,17 @@
                 <?php endforeach?>
 
             </div>
-            <footer class="page-footer font-small unique-color-dark pt-4">            
+        </div>
+            <footer class="page-footer font-small pt-4 text-white bg-dark">            
                 <ul class="list-unstyled list-inline text-center py-2">
                     <li class="list-inline-item">
                         <h5 class="mb-1">Dirección Cr 51 #14 - 57, Teléfono 6040707, Email: cellphone@gmail.com</h5>
                     </li>
                 </ul>
                 <div class="footer-copyright text-center py-3">© 2020 Copyright:
-                    <a href="listaProductos.php"> TiendaCellPhone.com</a>
+                    <a href="formularioRegistro.php"> TiendaCellPhone.com</a>
                 </div> 
-            </footer> 
-        </div>
+            </footer>
     
     
     
